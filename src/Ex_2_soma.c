@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// soma -- se atentar, pois dependendo o powershell não lê
+// calculadora
 int main(void){
     int a,b;
     printf("Digite um valor:");
