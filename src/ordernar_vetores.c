@@ -12,14 +12,20 @@ int main(void){
 
     //----- verificação e ordenação
     for (int i=0; i<10; i++){
-        for ( i = 0; i < 10; i++){
-            
+        for (int j = i; j < 10; j++){
+            if (v[i] > v[j]){
+                temp = v[i];
+                v[i] = v[j];
+                v[j] = temp;
+            }
         }
-        
-
-
-
     }
+
+    // ------ exibição
+    for (int i = 0; i < 10; i++){
+        printf("%d\n", v[i]);
+    }
+    
     
     return 0;
 }
