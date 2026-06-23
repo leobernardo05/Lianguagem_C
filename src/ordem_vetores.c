@@ -2,6 +2,7 @@
 
 // calculadora
 int main(void){
+    char ordem = 'v';
     int maior = 0;
     int v[10];
     
@@ -11,13 +12,15 @@ int main(void){
         if (i == 0){
             maior = v[0];
         }
-        if (maior < v[i]){
-            printf("Está em ordem");
-        } else {
-            printf("Não está em ordem");
+        if (v[i] < maior){
+            ordem = 'f';
         }
-        
-        
     }
+    if (ordem == 'v'){
+        printf("Está em ordem!");
+    } else {
+        printf("Não está em ordem");
+    }
+    
     return 0;
 }
